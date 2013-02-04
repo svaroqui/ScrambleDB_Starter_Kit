@@ -1,0 +1,25 @@
+sudo tar czh \
+--exclude=./skysql/mariadb  \
+--exclude=./skysql/dbt2  \
+--exclude=./skysql/dbt3 \
+--exclude=./skysql/haproxy  \
+--exclude=./skysql/httpd  \
+--exclude=./skysql/mariadb  \
+--exclude=./skysql/mariadb-client  \
+--exclude=./skysql/memcached  \
+--exclude=./skysql/memcached-client  \
+--exclude=./skysql/mha4mysql  \
+--exclude=./skysql/mycheckpoint  \
+--exclude=./skysql/mysql  \
+--exclude=./skysql/mysql-proxy  \
+--exclude=./skysql/mysql-client  \
+--exclude=./skysql/mysql-proxy-0.8.3-osx10.6-x86-64bit  \
+--exclude=./skysql/percona-toolkit  \
+--exclude=./skysql/postgresql  \
+--exclude=./skysql/sandbox  \
+--exclude=./skysql/sphinx  \
+--exclude=*.cnf  \
+--exclude=*.old  \
+--exclude=./skysql/sysbench  \
+-C /usr/local -f scramble_starter_pack_macosx.10.x86_64.tar.gz  ./skysql 
+ 
